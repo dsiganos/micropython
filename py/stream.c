@@ -27,6 +27,7 @@
 
 #include <string.h>
 #include <sys/types.h>
+#include <stdio.h>
 
 #include "py/objstr.h"
 #include "py/stream.h"

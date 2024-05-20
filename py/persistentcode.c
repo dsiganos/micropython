@@ -633,7 +633,7 @@ void mp_raw_code_save(mp_compiled_module_t *cm, mp_print_t *print) {
 
 #if MICROPY_PERSISTENT_CODE_SAVE_FILE
 
-#include <unistd.h>
+#include <sys/types.h>
 #include <sys/stat.h>
 #include <fcntl.h>
 

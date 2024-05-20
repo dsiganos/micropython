@@ -33,6 +33,6 @@ typedef uintptr_t mp_uint_t; // must be pointer size
 typedef long mp_off_t;
 
 // Need to provide a declaration/definition of alloca()
-#include <alloca.h>
+#include <stdlib.h>
 
 #define MICROPY_MPHALPORT_H "port/mphalport.h"

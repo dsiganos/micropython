@@ -28,7 +28,11 @@
 #include <stdint.h>
 #include <stdio.h>
 #include <string.h>
+#ifdef UWBIOT_TOP_BLE
 #include <sys/types.h>
+#else
+#include <unistd.h>
+#endif
 #include <assert.h>
 
 #include "py/mpstate.h"

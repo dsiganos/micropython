@@ -24,7 +24,11 @@
  * THE SOFTWARE.
  */
 
+#ifdef UWBIOT_TOP_BLE
 #include <sys/types.h> // for ssize_t
+#else
+#include <unistd.h> // for ssize_t
+#endif
 #include <string.h>
 
 #include "py/mpconfig.h"

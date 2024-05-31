@@ -29,7 +29,11 @@
 #include <stdarg.h>
 #include <stdio.h>
 #include <string.h>
+#ifdef UWBIOT_TOP_BLE
 #include <sys/types.h>
+#else
+#include <unistd.h>
+#endif
 
 #include "py/parsenum.h"
 #include "py/compile.h"

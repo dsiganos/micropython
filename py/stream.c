@@ -26,7 +26,11 @@
  */
 
 #include <string.h>
+#ifdef UWBIOT_TOP_BLE
 #include <sys/types.h>
+#else
+#include <unistd.h>
+#endif
 #include <stdio.h>
 
 #include "py/objstr.h"
